@@ -1,15 +1,15 @@
 # Maintainer: willemw <willemw12@gmail.com>
 
 pkgname=media-downloader-git
-pkgver=1.4.0.r42.g672e9c4
+pkgver=2.4.0.r56.g7c467b0-1
 pkgrel=1
 pkgdesc="GUI front-end for downloading media files (youtube-dl, ...)"
 arch=('x86_64')
 url='https://github.com/mhogomchungu/media-downloader'
 license=('GPL')
-depends=('qt5-base' 'yt-dlp-git' 'bcg729-git' 'bcmatroska2-git')
-makedepends=('cmake' 'git')
-optdepends=('wget: download files' 'youtube-dl: download files') 
+depends=('qt5-base') 
+makedepends=('cmake' 'git' 'yt-dlp-git' 'you-get' 'youtube-dl' 'gallery-dl' 'wget' 'aria2' 'bcg729-git' 'bcmatroska2-git')
+#optdepends=('wget: download files' 'youtube-dl: download files') 
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
 source=("$pkgname::git+$url.git")
