@@ -1,7 +1,7 @@
 # Maintainer: willemw <willemw12@gmail.com>
 
 pkgname=media-downloader-git
-pkgver=2.4.0.r56.g7c467b0-1
+pkgver=2.4.0.r56.g7c467b0
 pkgrel=1
 pkgdesc="GUI front-end for downloading media files (youtube-dl, ...)"
 arch=('x86_64')
