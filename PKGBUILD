@@ -16,7 +16,7 @@ source=("$pkgname::git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {
-  git -C $pkgname describe --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+  git -C ${pkgname%-git} describe --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 build() {
